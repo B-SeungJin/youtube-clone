@@ -1,0 +1,197 @@
+:root {
+    /* Color */
+    --white-color: #fff;
+    --balck-color: #140a00;
+    --blue-color: #045fd4;
+    --red-color: #ff0000;
+    --grey-dark-color: #363636;
+    --grey-light-color: #e0e0e0;
+
+    /* Size */
+    --pading: 14px;
+
+    /* Font Size */
+    --font-large: 18px;
+    --font-medium: 14px;
+    --font-small: 12px;
+    --font-xsmall: 10px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto;
+}
+
+ul {
+    list-style: none;
+}
+
+button, button:focus {
+    background-color: var(--white-color);
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--pading);
+}
+header .logo {
+    font-size: var(--font-large);
+    font-weight: bold;
+}
+header .logo i {
+    color: var(--red-color);
+    font-size: 23px;
+}
+header .icons .fa-search {
+    margin-right: var(--pading);
+}
+
+/* header코드가 겹치는 것을 보고 Sass의 중요성을 알게 되었다. */
+
+/* Video Player */
+.player {
+    position: sticky;
+    top: 0;
+    text-align: center;
+}
+.player video {
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+}
+
+/* Video Info */
+body > .info {
+    padding: var(--pading);
+}
+.hashtags {
+    display: flex;
+    font-size: var(--font-small);
+    color: var(--blue-color);
+}
+.hashtags li {
+    margin-right: 4px;
+}
+.metadata .titleAndButton {
+    display: flex;
+}
+.titleAndButton .title {
+    font-size: var(--font-large);
+}
+.titleAndButton .moreBtn {
+    height: 100%;
+}
+.info .views {
+    font-size: var(--font-medium);
+    color: var(--grey-dark-color);
+}
+
+/* Action Buttons */
+.actions {
+    display: flex;
+    justify-content: space-around;
+    margin: var(--pading) 0;
+}
+.actions button {
+    display: flex;
+    flex-direction: column;
+    font-size: var(--font-small);
+    color: var(--grey-dark-color);
+}
+.actions button i {
+    margin: 0 auto;
+    margin-bottom: 6px;
+    font-size: 16px;
+}
+.actions button i.active {
+    color: var(--blue-color);
+}
+
+/* Channel Description */
+.channel {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid var(--grey-light-color);
+    border-bottom: 1px solid var(--grey-light-color);
+}
+.channel .metadata {
+    display: flex;
+    align-items: center;
+}
+.channel .metadata .info {
+    display: flex;
+    flex-direction: column;
+}
+.channel .metadata img {
+    width: 52px;
+    height: 56px;
+}
+.channel .metadata .info .name {
+    font-size: var(--font-medium);
+}
+.channel .metadata .info .subscribers {
+    font-size: var(--font-small);
+    color: var(--grey-dark-color);
+}
+.channel .subscribe {
+    color: var(--red-color);
+    font-size: var(--font-medium);
+}
+
+/* nextList */
+.nextList {
+    padding: 0 var(--pading);
+}
+.nextList .item {
+    display: flex;
+}
+.nextList .item .img {
+    margin-right: var(--pading);
+}
+.nextList .item .img {
+    flex: 1 1 35%
+}
+.nextList .item .img img {
+    width: 100%
+}
+.nextList .item .info {
+    flex: 1 1 60%
+}
+.nextList .item .moreBtn {
+    flex: 1 1 5%
+}
+.nextList .item .info {
+    display: flex;
+    flex-direction: column;
+}
+.nextList .item .info .title {
+    font-size: var(--font-small);
+}
+.nextList .item .info .name,
+.nextList .item .info .views {
+    font-size: var(--font-xsmall);
+    color: var(--grey-dark-color);
+}
+
+.infoAndNextList {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+    .infoAndNextList {
+        flex-direction: row;
+        margin: var(--pading) 0;
+    }
+}

@@ -12,3 +12,6 @@
 ## 느낀 점
 군에서 보기만 했던 코딩을 직접 해보니 어려웠다. 스스로 해보고, 강좌를 참고하니 마크업 기술이 많이 부족하다는 것을 느꼈다. 앞으로 웹을 만드는데 있어 기본적인 틀을 잡아준 강의였다.
 간단한 버튼 기능을 구현하는데 자바스크립트, es6, jQuery 등등 알아보아야 할 것들이 넘쳐났다. 하나하나 제대로 공부를 해야겠다고 느꼈다.
+
+![image](https://user-images.githubusercontent.com/96096917/214866589-a1b9f823-6dd9-41cc-b5d6-baf8bec0e4aa.png)
+![image](https://user-images.githubusercontent.com/96096917/214866846-882e5934-2a81-42ba-bd3d-d5d289f16a5b.png)
